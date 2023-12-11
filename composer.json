@@ -1,0 +1,55 @@
+{
+	"name": "codekandis/pharaoh",
+	"description": "`codekandis/pharao` is a CLI application to create PHAR packages more easily.",
+	"version": "dev-development",
+	"keywords": [
+		"php",
+		"phar",
+		"package",
+		"cli",
+		"console"
+	],
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Christian Ramelow",
+			"email": "info@codekandis.net",
+			"homepage": "https://codekandis.net",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "info@codekandis.net",
+		"issues": "https://github.com/codekandis/pharaoh/issues",
+		"docs": "https://github.com/codekandis/pharaoh/blob/master/README.md",
+		"source": "https://github.com/codekandis/pharaoh/tree/master"
+	},
+	"require": {
+		"php": ">=8.2"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-master",
+		"codekandis/phpunit": "^5.0.0",
+		"rector/rector": "^0.18.12"
+	},
+	"autoload": {
+		"psr-4": {
+			"CodeKandis\\Pharaoh\\": [
+				"bin/",
+				"src/"
+			]
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"CodeKandis\\Pharaoh\\Build\\": [
+				"build/"
+			],
+			"CodeKandis\\Pharaoh\\Tests\\": [
+				"tests/"
+			]
+		}
+	}
+}
